@@ -1,20 +1,25 @@
 # EEG Data Classification Using Deep Learning
 
 This repository contains a notebook for classifying EEG data using deep learning models. The notebook is structured as follows:
-
-## 1. Introduction
+## 1. Dataset
+The data is sourced from the Mental Arithmetic
+Tasks Dataset available at PhysioNet (https://physionet.org/content/eegmat/1.0.0/). The
+dataset is pre-cleaned and ready for use, allowing you to focus on model implementation
+and evaluation. Please familiarize yourself with the dataset by reviewing the accompanying
+research paper (https://www.mdpi.com/2306-5729/4/1/14).
+## 2. Introduction
 This section provides the objective and background for the study. The aim is to classify EEG data into different states (e.g., task vs. rest) using deep learning techniques.
 
-## 2. Data Loading
+## 3. Data Loading
 This section includes the code and explanations for loading the EEG data from `.edf` files. It ensures that the data is properly preprocessed and ready for analysis.
 
-## 3. Power Spectral Density (PSD) Analysis
+## 4. Power Spectral Density (PSD) Analysis
 In this section, the Power Spectral Density (PSD) is calculated for the EEG data. The PSD analysis helps in understanding the frequency components of the signals, which is crucial for feature extraction.
 
-## 4. Data Preparation for Models
+## 5. Data Preparation for Models
 This section describes how the data is prepared for input into the deep learning models. It includes feature extraction, normalization, and splitting the data into training and testing sets.
 
-## 5. Deep Learning Models
+## 6. Deep Learning Models
 This section covers the implementation and training of two deep learning models:
 
 ### Model 1: EEGNet
@@ -25,7 +30,7 @@ This section covers the implementation and training of two deep learning models:
 - Implementation details of the Vision Transformer (ViT) model adapted for EEG data.
 - Code for training the ViT model on the prepared data.
 
-## 6. Evaluation
+## 7. Evaluation
 This section summarizes the results of the trained models. It includes metrics such as accuracy, precision, recall, and F1-score to evaluate the performance of each model.
 
 ## Results
@@ -39,10 +44,10 @@ The notebook provides a detailed analysis of the performance of each model. Belo
 - **F1-score**: 0.9091
 
 ### Custom Transformer
-- **Accuracy**: 0.9333
-- **Precision**: 0.8333
+- **Accuracy**: 0.93
+- **Precision**: 0.83
 - **Recall**: 1.0
-- **F1-score**: 0.9091
+- **F1-score**: 0.90
 
 ## Conclusion
 
